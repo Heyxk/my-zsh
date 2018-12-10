@@ -8,6 +8,7 @@
 1. 安装oh-my-zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+
 2. 安装我的配置
 
 sh -c "$(curl -fsSL https://gitee.com/xiangk/my-zsh/raw/master/install.sh)"
