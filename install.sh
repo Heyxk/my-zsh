@@ -35,7 +35,7 @@ main() {
   
   if [ ! -d "$ZSH" ]; then
     printf "${YELLOW}Oh My Zsh is not installed.${NORMAL}\n"
-    printf "You'll need to install Oh My Zsh first!\n"
+    printf "${RED}You'll need to install Oh My Zsh first!${NORMAL}\n"
     exit
   fi
   
@@ -44,7 +44,9 @@ main() {
   fi
 
   if [ -d "$MYZSH" ]; then
-    rm -r "$MYZSH"
+    printf "${YELLOW}My Zsh has been installed.${NORMAL}\n"
+    printf "${RED}You'll need to delete "$MYZSH" first!${NORMAL}\n"    
+    exit
   fi
 
   # Prevent the cloned repository from having insecure permissions. Failing to do
@@ -60,7 +62,7 @@ main() {
     exit 1
   }
 
-  env git clone --depth=1 git@gitee.com:xiangk/my-zsh.git "$MYZSH" || {
+  env git clone --depth=1 https://gitee.com/xiangk/my-zsh.git "$MYZSH" || {
     printf "Error: git clone of my-zsh repo failed\n"
     exit 1
   }
