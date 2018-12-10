@@ -3,10 +3,11 @@
 #### 项目介绍
 我的zsh配置
 
-#### 软件架构
-软件架构说明
-
-
 #### 安装教程
+
+1. 安装oh-my-zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+2. 安装我的配置
 
 sh -c "$(curl -fsSL https://gitee.com/xiangk/my-zsh/raw/master/install.sh)"
