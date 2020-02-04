@@ -67,7 +67,9 @@ main() {
     exit 1
   }
 
-
+  cd "$MYZSH"
+  git submodule init
+  git submodule update
   cd "$MYZSH"/plugins/zsh-syntax-highlighting
   git checkout master
   git pull origin master
