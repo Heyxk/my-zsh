@@ -11,4 +11,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 2. 安装我的配置
 
-sh -c "$(curl -fsSL https://gitee.com/xiangk/my-zsh/raw/master/install.sh)"
+sh -c "$(curl -fsSL https://github.com/Heyxk/my-zsh/raw/master/install.sh)"
